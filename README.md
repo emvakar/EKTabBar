@@ -6,8 +6,10 @@
 [![Telegram: @emvakar](http://img.shields.io/badge/telegram-%40emvakar-70a1fb.svg?style=flat)](https://t.me/emvakar)
 [![Linkedin: emvakar](http://img.shields.io/badge/linkedin-emvakar-70a1fb.svg?style=flat)](https://www.linkedin.com/in/emvakar)
 [![Twitter: @emvakar](http://img.shields.io/badge/twitter-%40emvakar-70a1fb.svg?style=flat)](https://twitter.com/emvakar)
-![License](https://img.shields.io/cocoapods/l/Hero.svg?style=flat)
 
+##
+
+![Example pic](/example.png "EKTabBarController")
 
 ## Installation 📱
 
