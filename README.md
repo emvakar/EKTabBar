@@ -9,7 +9,7 @@
 
 ## Screens
 
-<img src="example.png" alt="example" width="200"/>
+<img src="example.png" alt="example" width="700"/>
 
 ## Installation 📱
 
