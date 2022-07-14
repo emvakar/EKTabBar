@@ -1,3 +1,3 @@
 # EKTabBarController
 
-A description of this package.
+Floating TabBar
