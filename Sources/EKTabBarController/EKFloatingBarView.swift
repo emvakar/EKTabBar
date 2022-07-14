@@ -38,11 +38,6 @@ class EKFloatingBarView: UIView {
 
         layer.cornerRadius = cornerRadius
 
-        layer.shadowPath = UIBezierPath(rect: bounds).cgPath
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.1
-        layer.shadowOffset = .zero
-        layer.shadowRadius = bounds.height / 2
     }
 
     func setupStackView(_ items: [UITabBarItem]) {
