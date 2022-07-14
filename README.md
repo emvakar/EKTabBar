@@ -7,9 +7,9 @@
 [![Linkedin: emvakar](http://img.shields.io/badge/linkedin-emvakar-70a1fb.svg?style=flat)](https://www.linkedin.com/in/emvakar)
 [![Twitter: @emvakar](http://img.shields.io/badge/twitter-%40emvakar-70a1fb.svg?style=flat)](https://twitter.com/emvakar)
 
-##
+## Screens
 
-![Example pic](/example.png "EKTabBarController")
+<img src="example.png" alt="example" width="200"/>
 
 ## Installation 📱
 
