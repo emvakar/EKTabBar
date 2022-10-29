@@ -20,11 +20,16 @@ class EKFloatingBarView: UIView {
     weak var delegate: EKFloatingBarViewDelegate?
     
     private let cornerRadius: CGFloat
+    private let borderWidth: CGFloat
+    private let borderColor: UIColor
 
     private var buttons: [UIButton] = []
 
-    init(_ items: [UITabBarItem], cornerRadius: CGFloat = 20, backgroundColor: UIColor = .white) {
+    init(_ items: [UITabBarItem], cornerRadius: CGFloat = 20, backgroundColor: UIColor = .white, borderWidth: CGFloat,
+         borderColor: UIColor) {
         self.cornerRadius = cornerRadius
+        self.borderColor = borderColor
+        self.borderWidth = borderWidth
         
         super.init(frame: .zero)
         
@@ -37,6 +42,8 @@ class EKFloatingBarView: UIView {
         super.layoutSubviews()
 
         layer.cornerRadius = cornerRadius
+        layer.borderColor = borderColor
+        layer.borderWidth = borderWidth
 
     }
 

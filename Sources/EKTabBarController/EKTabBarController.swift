@@ -17,6 +17,8 @@ public final class EKTabBarController: UITabBarController {
     private let cornerRadius: CGFloat
     private let backColor: UIColor
     private let bottomSpace: CGFloat
+    private let borderWidth: CGFloat
+    private let borderColor: UIColor
     
     /// Initialize TabBar controller
     /// - Parameters:
@@ -29,13 +31,18 @@ public final class EKTabBarController: UITabBarController {
                 cornerRadius: CGFloat,
                 backgroundColor: UIColor,
                 insets: UIEdgeInsets = .init(top: 0, left: 16, bottom: 0, right: 16),
-                bottomSpace: CGFloat = 50) {
+                bottomSpace: CGFloat = 50,
+                borderWidth: CGFloat = 0,
+                borderColor: UIColor = .clear) {
         
         self.controllerItems = controllerItems
         self.insets = insets
         self.cornerRadius = cornerRadius
         self.backColor = backgroundColor
         self.bottomSpace = abs(bottomSpace)
+
+        self.borderColor = borderColor
+        self.borderWidth = borderWidth
         
         super.init(nibName: nil, bundle: nil)
     }
