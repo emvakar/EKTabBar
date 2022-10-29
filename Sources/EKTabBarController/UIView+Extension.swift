@@ -17,11 +17,11 @@ extension UIView {
     func addExternalBorder(borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> CALayer {
         let externalBorder = CALayer()
         externalBorder.frame = CGRectMake(-borderWidth, -borderWidth, frame.size.width + 2 * borderWidth, frame.size.height + 2 * borderWidth)
-        externalBorder.borderColor = borderColor.CGColor
+        externalBorder.borderColor = borderColor.cgColor
         externalBorder.borderWidth = borderWidth
         externalBorder.name = Constants.ExternalBorderName
 
-        layer.insertSublayer(externalBorder, atIndex: 0)
+        layer.insertSublayer(externalBorder, at: 0)
         layer.masksToBounds = false
 
         return externalBorder
