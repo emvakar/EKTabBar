@@ -42,7 +42,7 @@ class EKFloatingBarView: UIView {
         super.layoutSubviews()
 
         layer.cornerRadius = cornerRadius
-        layer.borderColor = borderColor
+        layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
 
     }

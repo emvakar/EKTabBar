@@ -96,7 +96,7 @@ private extension EKTabBarController {
 
     func makeFloatingBarView() -> EKFloatingBarView {
         let items = controllerItems.compactMap({ $0.tabBarButtonItem })
-        return EKFloatingBarView(items, cornerRadius: cornerRadius, backgroundColor: backColor)
+        return EKFloatingBarView(items, cornerRadius: cornerRadius, backgroundColor: backColor, borderWidth: borderWidth, borderColor: borderColor)
     }
     
     func createNavViewController(viewController: UIViewController, title: String, imageName: String) -> UIViewController {
