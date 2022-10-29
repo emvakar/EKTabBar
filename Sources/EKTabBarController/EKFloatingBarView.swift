@@ -42,7 +42,8 @@ class EKFloatingBarView: UIView {
         super.layoutSubviews()
 
         layer.cornerRadius = cornerRadius
-        _ = addExternalBorder(borderWidth: borderWidth, borderColor: borderColor)
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = borderWidth
 
     }
 
@@ -66,7 +67,7 @@ class EKFloatingBarView: UIView {
 
         addSubview(stackView)
         stackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16))
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 0, left: abs(16 - borderWidth), bottom: 0, right: abs(16 - borderWidth)))
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {

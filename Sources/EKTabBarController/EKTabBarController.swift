@@ -36,7 +36,10 @@ public final class EKTabBarController: UITabBarController {
                 borderColor: UIColor = .clear) {
         
         self.controllerItems = controllerItems
-        self.insets = insets
+        self.insets = UIEdgeInsets(top: insets.top - borderWidth,
+                                   left: insets.left - borderWidth,
+                                   bottom: insets.bottom - borderWidth,
+                                   right: insets.right - borderWidth)
         self.cornerRadius = cornerRadius
         self.backColor = backgroundColor
         self.bottomSpace = abs(bottomSpace)
